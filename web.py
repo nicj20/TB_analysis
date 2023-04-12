@@ -1,6 +1,7 @@
 import streamlit as st
 import plotly.express as px
 import re
+import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 
 with open('haruki_murakami.txt', 'r', encoding='utf-8') as file:
