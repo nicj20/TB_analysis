@@ -1,6 +1,7 @@
 import re
 from nltk.sentiment import SentimentIntensityAnalyzer
-
+import nltk
+nltk.downloader.download('vader_lexicon')
 
 def get_data_lines():
     with open('haruki_murakami.txt', 'r', encoding='utf-8') as file:
